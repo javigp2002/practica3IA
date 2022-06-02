@@ -82,5 +82,11 @@ class AIPlayer: public Player{
          */
         
         double Poda_AlfaBeta(const Parchis &actual, int profundidad, color &c_piece, int &id_piece, int &dice, double alpha, double beta, double (*heuristic)(const Parchis &, int)) const;
+
+        static double miValoracion(const Parchis &estado, int jugador);
+
+        void updatePuntuacion( double &puntuacion, vector<color> &my_colors, const Parchis &estado);
+    
+
 };
 #endif
