@@ -86,6 +86,8 @@ class AIPlayer: public Player{
         static double miValoracion(const Parchis &estado, int jugador);
 
         void updatePuntuacion( double &puntuacion, vector<color> &my_colors, const Parchis &estado);
+         static double puntuacionJugador(const Parchis &estado, vector<color> my_colors, vector<color> enemy_colors, int jugador);
+
     
 
 };
